@@ -50,12 +50,14 @@ func main() {
 	decodeOutputFile := decodeCmd.String("o", "decrypted", "output file name")
 
 	if len(os.Args) < 2 {
+		fmt.Println("--------------------------------------------------------")
 		fmt.Println("Usage: spark.exe [command]")
 		fmt.Println("Available commands: gen, sign, verify, encode, decode.")
 		fmt.Println("This Project was created as a demo for XDU's 'Spark Cup', 2023.")
 		fmt.Println("Using Golang, it support Windows, Linux, and other systems.")
 		fmt.Println("Spark version 3 added support for encode and decode. ")
-		fmt.Println("For more information, please turn to Instruction.md, or email at gaoweixu@stu.xidian.edu.cn.")
+		fmt.Println("For more information, please turn to Instruction.md")
+		fmt.Println("--------------------------------------------------------")
 		return
 	}
 
